@@ -30,7 +30,7 @@ public class Atoi {
 	}
 	
 	public static int two(String str){
-		return Integer.parseInt(str);
+		return Integer.valueOf(str);
 	}
 	
 	public static void main(String[] args) {
@@ -39,7 +39,7 @@ public class Atoi {
 		
 		System.out.println(myAtoi(str));
 		System.out.println(two(str));
-				
+	
 	}
 	
 }
