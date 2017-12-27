@@ -1,3 +1,4 @@
+package string_arrays;
 
 public class ReverseString2 {
 	public static String reverseStr(String s, int k) {

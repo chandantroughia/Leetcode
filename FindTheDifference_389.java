@@ -22,5 +22,11 @@ public class FindTheDifference_389 {
 		String t = "abcfde";
 		
 		System.out.println(Diff(s, t));
+		
+//		System.out.println((int)'a');
+//		System.out.println(Character.getNumericValue('a'));
+//		System.out.println('a' - 0);
+		
+		
 	}
 }

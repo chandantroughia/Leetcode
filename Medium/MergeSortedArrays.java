@@ -35,10 +35,10 @@ public class MergeSortedArrays {
 
 
 	public static void main(String[] args) {
-		int[] arr1 = {0};
+		int[] arr1 = {1, 2, 3};
         int m = arr1.length;
      
-        int[] arr2 = {1};
+        int[] arr2 = {4, 5, 6};
         int n = arr2.length;
      
          

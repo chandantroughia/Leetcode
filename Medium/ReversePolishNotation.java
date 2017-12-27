@@ -44,7 +44,7 @@ public class ReversePolishNotation {
 	
 	
 	public static void main(String[] args) {
-		String[] tokens =  {"0","3","/"};
+		String[] tokens =  {"5","3","/"};
 		
 		System.out.println(evalRPN(tokens));
 		

@@ -14,6 +14,7 @@ public class CountSegment_434 {
 	}
 	
 	public static void secondFunction(String s){
+		s = s.replaceFirst("[^A-Za-z0-9]", "");
 		int count = 0;
 		for(int i = 0; i < s.length(); i++){
 			if(s.charAt(i)==' ') count++;
@@ -25,7 +26,6 @@ public class CountSegment_434 {
 	public static void main(String[] args) {
 		String s = "Hello, my name is John";
 		System.out.println(countSegment(s));
-		
 		secondFunction(s);
 		
 	}

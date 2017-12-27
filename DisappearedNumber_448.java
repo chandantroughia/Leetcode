@@ -78,5 +78,6 @@ public class DisappearedNumber_448 {
 		for(int i: ans){
 			System.out.println(i);
 		}
+		
 	}
 }

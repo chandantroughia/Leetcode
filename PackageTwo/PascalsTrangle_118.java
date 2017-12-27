@@ -35,6 +35,9 @@ public class PascalsTrangle_118 {
 	
 	public static void main(String[] args) {
 		int n = 5;
-		System.out.println(pascalTriangle(n));
+		ArrayList<ArrayList<Integer>> ans = pascalTriangle(n);
+		for(ArrayList<Integer> I : ans){
+			System.out.println(I);
+		}
 	}
 }
