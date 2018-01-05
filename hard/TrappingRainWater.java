@@ -8,32 +8,21 @@ public class TrappingRainWater {
 		int right = arr.length - 1;
 		int left_max = 0;
 		int right_max = 0;
-		int ans = 0;
+		int water = 0;
 		
-		while(left < right){
+		while(left <= right){
+			left_max = Math.max(left_max, arr[left]);
+			right_max = Math.max(right_max, arr[right]);
 			
-			if(arr[left] < arr[right]){
-				
-				if(arr[left] >= left_max){
-					left_max = arr[left];
-				}else{
-					ans += left_max - arr[left];
-				}
+			if(left_max < right_max){
+				water += left_max - arr[left];
 				left++;
-			}
-			else
-			{
-				if(arr[right] >= right_max){
-					right_max = arr[right];
-				}else{
-					ans += right_max - arr[right];
-				}
+			}else{
+				water += right_max - arr[right];
 				right--;
 			}
 		}
-		
-		return ans;
-		
+		return water;
 	}
 	
 	
